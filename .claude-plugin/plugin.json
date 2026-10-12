@@ -1,0 +1,21 @@
+{
+  "name": "netcraft",
+  "displayName": "Netcraft Agentic Security",
+  "description": "Protect AI coding agents from malicious URLs with Netcraft checks and user-initiated reporting.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Netcraft",
+    "email": "info@netcraft.com"
+  },
+  "homepage": "https://www.netcraft.com",
+  "repository": "https://github.com/netcraftcom/agentic-security-plugin",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "phishing",
+    "malware",
+    "url-protection",
+    "netcraft"
+  ],
+  "hooks": "./hooks/claude-hooks.json"
+}
