@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "node \"${CURSOR_PLUGIN_ROOT}/scripts/url_check.mjs\"",
+        "timeout": 10
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "node \"${CURSOR_PLUGIN_ROOT}/scripts/url_check.mjs\"",
+        "timeout": 10,
+        "failClosed": true
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "node \"${CURSOR_PLUGIN_ROOT}/scripts/url_check.mjs\"",
+        "timeout": 10,
+        "failClosed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "netcraft-agentic-security-marketplace",
+  "description": "Netcraft URL protection plugins for agentic coding workflows.",
+  "owner": {
+    "name": "Netcraft",
+    "email": "info@netcraft.com"
+  },
+  "plugins": [
+    {
+      "name": "netcraft",
+      "source": "./",
+      "description": "Protect AI coding agents from malicious URLs with Netcraft checks and user-initiated reporting.",
+      "category": "security",
+      "tags": [
+        "security",
+        "phishing",
+        "malware",
+        "url-protection"
+      ]
+    }
+  ]
+}

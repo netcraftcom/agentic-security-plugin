@@ -1,0 +1,15 @@
+{
+  "name": "netcraft-agentic-security-marketplace",
+  "owner": {
+    "name": "Netcraft",
+    "email": "info@netcraft.com"
+  },
+  "plugins": [
+    {
+      "name": "netcraft",
+      "source": "./",
+      "category": "security",
+      "logo": "assets/logo.svg"
+    }
+  ]
+}

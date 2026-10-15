@@ -1,0 +1,44 @@
+{
+  "description": "Netcraft URL protection - checks URLs against Netcraft's threat intelligence",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/url_check.mjs"],
+            "timeout": 10,
+            "statusMessage": "Checking URLs against Netcraft..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch|WebSearch|Bash|PowerShell|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/url_check.mjs"],
+            "timeout": 10,
+            "statusMessage": "Checking URL against Netcraft..."
+          }
+        ]
+      }
+    ],
+    "MessageDisplay": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/url_check.mjs"],
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
